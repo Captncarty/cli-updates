@@ -43,12 +43,30 @@ fn input() -> (Add_str, Colour) {
         Colors::White => Colour::White,
     };
 
+    // println!("Quote: {}", args.quote);
     println!("The user choose color: {:?}", color_matched);
     //return the tuple
     (args.quote, color_matched)
 }
 
+//Drawing a Ferris
+fn draw(quote: &str, color: &Colour) {
+const FERRIS: &'static str = r"
+.
+ .
+  .
+   █ █           █ █
+    ▀█  ▄█████▄  █▀
+     ▀▄███▀█▀███▄▀ 
+     ▄▀███▀▀▀███▀▄ 
+     █ ▄▀▀▀▀▀▀▀▄ █
+ ";
+    println!("{}", format!("\"{}\"{}", quote, color.paint(FERRIS)));
+}
+
 fn main() {
-    input();
+    // input();
+    let (q, c) = input();
+    draw(&q, &c)
 }
                                                              
