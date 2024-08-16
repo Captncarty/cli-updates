@@ -24,7 +24,7 @@ or
 For more info Run `./target/release/cli-updates -h`
 
 <p align ="center">
-    <img width="500" height="300" src="src/img/example.png">
+    <img width="500" height="300" src="src/img/examples.png">
 </p>
 
 ### AUTHOR
