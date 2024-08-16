@@ -1,4 +1,5 @@
 // Imports
+use std::string::String as Add_str;
 use ansi_term::{self, Colour};
 use clap::{ValueEnum, Parser};
 
@@ -28,7 +29,7 @@ enum Colors {
 
 
 
-fn input() -> (std::string::String, Colour) {
+fn input() -> (Add_str, Colour) {
     let args = Args::parse();
     // args.quote -> to access the quote
     // args.color -> to access the color
