@@ -51,16 +51,16 @@ fn input() -> (Add_str, Colour) {
 
 //Drawing a Ferris
 fn draw(quote: &str, color: &Colour) {
-const FERRIS: &'static str = r"
-.
- .
-  .
-   █ █           █ █
-    ▀█  ▄█████▄  █▀
-     ▀▄███▀█▀███▄▀ 
-     ▄▀███▀▀▀███▀▄ 
-     █ ▄▀▀▀▀▀▀▀▄ █
- ";
+    const FERRIS: &'static str = r"
+    .
+     .
+      .
+       █ █           █ █
+        ▀█  ▄█████▄  █▀
+         ▀▄███▀█▀███▄▀ 
+         ▄▀███▀▀▀███▀▄ 
+         █ ▄▀▀▀▀▀▀▀▄ █
+    ";
     println!("{}", format!("\"{}\"{}", quote, color.paint(FERRIS)));
 }
 
