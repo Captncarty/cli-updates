@@ -1,4 +1,7 @@
 // Imports
+use std::thread;
+use std::time::Duration;
+
 use std::string::String as Add_str;
 use ansi_term::{self, Colour};
 use clap::{ValueEnum, Parser};
@@ -67,6 +70,7 @@ fn draw(quote: &str, color: &Colour) {
 fn main() {
     // input();
     let (q, c) = input();
+    thread::sleep(Duration::from_millis(2000));
     draw(&q, &c)
 }
                                                              
